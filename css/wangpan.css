@@ -1,0 +1,311 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+	background:none;	
+}
+
+/*用户操作区*/
+#operateBox{
+	height:	60px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	padding-left:60px;
+	background:#EEE;
+}
+/*按钮*/
+.operator-item{
+	display:block;
+	width:84px;
+	height:32px;
+	line-height:32px;
+	float:left;
+	background:orange;
+	margin:14px 15px 14px 0px;
+	border: 0px;
+	border-radius:5px;
+	font-size:14px;
+	font-weight:bold;
+	color:white;
+	cursor:pointer;
+	outline:none;
+	text-align:center;
+}
+/*搜索栏*/
+#operateBox div{
+	width:270px;
+	height:30px;
+	float:right;
+	margin:15px 50px 0px 0px;
+	border-radius:15px;
+	border:1px solid orange;
+	background:pink;
+}
+#search{
+	display:block;
+	width:190px;
+	height:30px;
+	outline:none;
+	cursor:pointer;
+	float:left;
+	border:0px;
+	padding-left:20px;
+	border-top-left-radius:15px;
+	border-bottom-left-radius:15px;
+}
+#searchBtn{
+	display:block;
+	float:left;
+	border:0px;
+	width:60px;
+	height:30px;
+	line-height:30px;
+	color:white;
+	outline:none;
+	cursor:pointer;
+	background:orange;
+	border-top-right-radius:15px;
+	border-bottom-right-radius:15px;	
+}
+
+/*文件目录层次关系区*/
+#showDir{
+	width:100%;
+	height:15px;
+}
+#left-dirRank{
+	width:600px;
+	height:15px;
+	line-height:15px;
+	float:left;
+	font-size:13px;
+	cursor:pointer;
+	padding-left:20px;
+}
+#left-dirRank a{
+	color:orange;
+	margin:0px 4px 0px 4px;
+	text-decoration:none;
+}
+#left-dirRank a:hover{
+	color:blue;
+	text-decoration:none;
+}
+
+/*右侧统计文件个数*/
+#left-countsFile{
+	width:140px;
+	height:15px;
+	line-height:15px;
+	float:right;
+	font-size:13px;
+	color:gray;
+}
+
+
+/*文件标题区*/
+#fileTitle{
+	width:100%;
+	height:32px;
+	border-bottom:0.2px solid #CCF;
+}
+#title-filename{
+	width:350px;
+	height:32px;
+	line-height:32px;
+	float:left;
+	font-size:14px;
+	padding-left:50px;
+	color:gary;
+}
+#title-selectAll{
+	width:12px;
+	height:12px;
+	float:left;
+	margin:9px 8px 0px 0px;
+	border:1px solid gray;
+	background-image:none;
+	background-size:cover;
+	cursor:pointer;
+}
+#title-fileSize{
+	width:200px;
+	height:32px;
+	line-height:32px;
+	font-size:14px;
+	color:gary;
+	float:right;
+	text-align:center;
+}
+#title-fileTime{
+	width:220px;
+	height:32px;
+	line-height:32px;
+	font-size:14px;
+	float:right;
+	margin-right:50px;
+	text-align:center;
+}
+
+
+/*显示文件盒子区*/
+#showFileBox{
+	width:100%;
+	height:auto;
+}
+#showFileBox div{
+	width:inherit;
+	height:44px;
+	border-bottom:0.2px solid #EFEFEF;
+	background:none;
+}
+
+/*盒子内-小勾*/
+.selectedbox{
+	display:block;
+	width:12px;
+	height:12px;
+	border:1px solid gray;
+	margin:16px 10px 0px 50px;
+	float:left;
+	background-image:none;
+	background-size:cover;
+}
+/*盒子内-文件icon*/
+.is_file{
+	display:block;
+	width:20px;
+	height:20px;
+	margin:12px 10px 0px 2px; 
+	float:left;
+	background-image:url(../images/filename_icon.png);
+	background-size:cover;
+}
+.is_directory{
+	display:block;
+	width:20px;
+	height:20px;
+	margin:12px 10px 0px 2px; 
+	float:left;
+	background-image:url(../images/directory_icon.png);
+	background-size:cover;
+}
+/*盒子内-文件名*/
+.file_name{
+	display:block;
+	width:240px;
+	height:16px;
+	line-height:16px;
+	margin:14px 0px 0px 0px;
+	float:left;
+	overflow:hidden;
+	font-size:13px;
+	color:black;
+	text-decoration:none;
+	cursor:pointer;
+}
+.file_name:hover{
+	text-decoration:none;	
+}
+.directory_name{
+	display:block;
+	width:290px;
+	height:16px;
+	line-height:16px;
+	margin:14px 0px 0px 0px;
+	float:left;
+	overflow:hidden;
+	font-size:13px;
+	color:black;
+	text-decoration:none;
+	cursor:pointer;
+}
+.directory_name:hover{
+	color:orange;
+	text-decoration:none;	
+}
+
+
+/*下载按钮*/
+.downloadFile{
+	display:none;
+	width:60px;
+	height:20px;
+	line-height:20px;
+	margin:11px 0px 0px 10px;
+	float:left;
+	font-size:13px;
+	text-align:center;
+	color:orange;
+	cursor:pointer;
+}
+
+
+/*盒子内-文件大小*/
+.filesize{
+	display:block;
+	float:right;
+	width:200px;
+	height:16px;
+	line-height:16px;
+	font-size:13px;
+	margin:14px 0px 0px 0px;
+	text-align:center;
+}
+/*盒子内-文件最后修改时间*/
+.fileModiTime{
+	display:block;
+	float:right;
+	width:220px;
+	height:16px;
+	line-height:16px;
+	font-size:13px;
+	color:black;
+	margin:14px 50px 0px 0px;
+	text-align:center;
+}
+
+
+
+/*上传文件提示悬浮层*/
+#uploadPromptLayer{
+	width:400px;
+	height:220px;
+	background:white;
+	cursor:pointer;
+	position:absolute;
+	z-index:10;
+	left:300px;
+	top:100px;
+	border-radius:15px;
+	display:none;
+}
+#msgShut{
+	width:60px;
+	height:30px;
+	line-height:30px;
+	float:right;
+	background:yellow;
+	text-align:center;
+	border-top-right-radius:15px;
+	border-bottom-left-radius:15px;
+}
+/*提示层中表单样式*/
+#chooseFileBtn{
+	width:300px;
+	height:30px;
+	margin:40px 0px 20px 50px;
+}
+#submitBtn{
+	width:100px;
+	height:30px;
+	margin:0px 0px 0px 50px;
+	background:#69F;	
+}
+
+
+
+
+
+
+
+
